@@ -1,0 +1,41 @@
+.container {
+    background-color: rgb(64, 93, 224);
+    height:500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+.screen {
+    background-color: rgb(226, 221, 221);
+    
+    height: 100px;
+    width: 290px;
+}
+
+.buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.buttons button {
+    flex: 1;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+}
