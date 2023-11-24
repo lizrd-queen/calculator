@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(64, 93, 224);
+    background-color: rgb(218, 28, 123);
     border-radius: 10px;
     height:500px;
     width: 300px;
@@ -44,4 +44,5 @@
     aspect-ratio: 1;
     box-sizing: border-box;
     border-radius: 50%;
+    border-color: rgb(0, 0, 0);
 }
