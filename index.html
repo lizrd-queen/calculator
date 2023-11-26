@@ -14,20 +14,20 @@
             <div class = "row1">
               <button class = "reset" id="resetButton">AC</button>
               <button class = "delete" id = "deleteButton">C</button>
-              <button class = "add" id = "addButton">+</button>
-              <button class = "subtract" id = "subtractButton">-</button>
+              <button onclick="setOperator('+')" class = "add" id = "addButton">+</button>
+              <button onclick="setOperator('-')" class = "subtract" id = "subtractButton">-</button>
             </div>
             <div class="row2">
               <button class = "numbers" data-type="number" id="numButton7" value="7">7</button>
               <button class = "numbers" data-type="number" id="numButton8" value="8">8</button>
               <button class = "numbers" data-type="number" id="numButton9" value="9">9</button>
-              <button class = "divide" id = "divideButton">/</button>
+              <button onclick="setOperator('/')" class = "divide" id = "divideButton">/</button>
             </div>
             <div class="row3">
               <button class = "numbers" data-type="number" id="numButton4" value="4">4</button>
               <button class = "numbers" data-type="number" id="numButton5" value="5">5</button>
               <button class = "numbers" data-type="number" id="numButton6" value="6">6</button>
-              <button class = "multiply" id = "mulitplyButton">x</button>
+              <button onclick="setOperator('*')" class = "multiply" id = "mulitplyButton">x</button>
             </div>
             <div class ="row4">
               <button class = "numbers" data-type="number" id="numButton1" value="1">1</button>
