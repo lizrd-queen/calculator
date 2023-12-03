@@ -13,8 +13,10 @@
 .screen {
     background-color: rgb(226, 221, 221);
     border-radius:25px;
-    height: 100px;
-    width: 290px;
+    height: 80px;
+    width: 270px;
+    padding:10px;
+    
 }
 
 .buttons {

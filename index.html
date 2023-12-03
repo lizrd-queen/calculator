@@ -12,28 +12,29 @@
         <div class = "screen"></div>
         <div class = "buttons">
             <div class = "row1">
-              <button class = "reset" id="resetButton">AC</button>
-              <button class = "delete" id = "deleteButton">C</button>
-              <button onclick="setOperator('+')" class = "add" id = "addButton">+</button>
+              <button class = "reset" onclick="clearAll()" id="resetButton">AC</button>
+              <button class = "delete" onclick="clearInput()" id = "deleteButton">C</button>
+              <button onclick="setOperator('+')"  class = "add" id = "addButton">+</button>
               <button onclick="setOperator('-')" class = "subtract" id = "subtractButton">-</button>
-            </div>
-            <div class="row2">
-              <button class = "numbers" data-type="number" id="numButton7" value="7">7</button>
-              <button class = "numbers" data-type="number" id="numButton8" value="8">8</button>
-              <button class = "numbers" data-type="number" id="numButton9" value="9">9</button>
               <button onclick="setOperator('/')" class = "divide" id = "divideButton">/</button>
             </div>
+            <div class="row2">
+              <button class = "numbers" data-type="number" id="numButton7" onclick="handleNumber('7')" value="7">7</button>
+              <button class = "numbers" data-type="number" id="numButton8" onclick="handleNumber('8')" value="8">8</button>
+              <button class = "numbers" data-type="number" id="numButton9" onclick="handleNumber('9')" value="9">9</button>
+              <button class = "numbers" data-type="number" id="numButton0" onclick="handleNumber('0')" value="0">0</button>
+            </div>
             <div class="row3">
-              <button class = "numbers" data-type="number" id="numButton4" value="4">4</button>
-              <button class = "numbers" data-type="number" id="numButton5" value="5">5</button>
-              <button class = "numbers" data-type="number" id="numButton6" value="6">6</button>
+              <button class = "numbers" data-type="number" id="numButton4" onclick="handleNumber('4')" value="4">4</button>
+              <button class = "numbers" data-type="number" id="numButton5" onclick="handleNumber('5')" value="5">5</button>
+              <button class = "numbers" data-type="number" id="numButton6" onclick="handleNumber('6')" value="6">6</button>
               <button onclick="setOperator('*')" class = "multiply" id = "mulitplyButton">x</button>
             </div>
             <div class ="row4">
-              <button class = "numbers" data-type="number" id="numButton1" value="1">1</button>
-              <button class = "numbers" data-type="number" id="numButton2" value="2">2</button>
-              <button class = "numbers" data-type="number" id="numButton3" value="3">3</button>
-              <button class = "equals" id = "equalsButton">=</button>
+              <button class = "numbers" data-type="number" id="numButton1" onclick="handleNumber('1')" value="1">1</button>
+              <button class = "numbers" data-type="number" id="numButton2" onclick="handleNumber('2')" value="2">2</button>
+              <button class = "numbers" data-type="number" id="numButton3" onclick="handleNumber('3')" value="3">3</button>
+              <button class = "equals" onclick="calculateResult()" id = "equalsButton">=</button>
             </div>
             
             
